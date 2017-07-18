@@ -2,7 +2,7 @@
   {
     "people": 1,
     "severity": "warning",
-    "message": "ate something they didn't agree with",
+    "message": "ate something they didn't agree with and now has food poisoning (uses 2 food at a time due to illness)",
     "debuff": {
       "name": "foodPoisoning",
       "time": 3
