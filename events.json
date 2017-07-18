@@ -1,0 +1,54 @@
+[
+  {
+    "people": 1,
+    "severity": "warning",
+    "message": "ate something they didn't agree with",
+    "debuff": {
+      "name": "foodPoisoning",
+      "time": 3
+    }
+  },
+  {
+    "people": 2,
+    "severity": "danger",
+    "message": "killed [[NAME2]] in a bloody battle with [[WEAPON]]",
+    "kill": "second"
+  },
+  {
+    "people": 2,
+    "severity": "danger",
+    "message": "killed [[NAME2]], but was badly wounded and died from blood loss",
+    "kill": "both"
+  },
+  {
+    "people": 2,
+    "severity": "danger",
+    "message": "was killed by [[NAME2]]",
+    "kill": "first"
+  },
+  {
+    "people": 1,
+    "severity": "success",
+    "message": "found a day's worth of food left next to a campfire. There are signs of a hasty departure, but there's no threat here now.",
+    "getItem": {
+      "name": "food",
+      "amount": 1
+    }
+  },
+  {
+    "people": 4,
+    "severity": "success",
+    "message": "comes across [[NAME2]], [[NAME3]], and [[NAME4]] and they all have a party, and break out into a chorus of \"One Day More\""
+  },
+  {
+    "people": 2,
+    "severity": "warning",
+    "message": "Finds [[NAME2]] looking a little lost. They agree to spare each other. For now."
+  },
+  {
+    "people": 1,
+    "severity": "danger",
+    "message": "Wandered too far into the wilderness and was incinerated by a gamemaker-controlled fireball.",
+    "kill": "all"
+  }
+]

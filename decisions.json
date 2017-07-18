@@ -1,0 +1,230 @@
+[
+  {
+    "prompt": "You're exploring the woods when you find an unusually square boulder partially embedded in the grass. Upon closer inspection you discover it has a button one one side, almost invisible against the rock. What do you do?",
+    "options": [
+      {
+        "buttonClass": "is-danger",
+        "text": "Press the button"
+      },
+      {
+        "buttonClass": "",
+        "text": "Walk away"
+      },
+      {
+        "buttonClass": "is-primary",
+        "text": "Travel to a reasonable distance and throw stuff at it, hoping to hit."
+      }
+    ],
+    "optionResults": [
+      [
+        {
+          "action": "death",
+          "description": "The rock explodes, blowing you and your belongings sky-high.",
+          "message": "[[NAME]] was blown up.",
+          "severity": "danger",
+          "chance": 0.5
+        },
+        {
+          "action": "getItem",
+          "description": "A small slot opens, and there is a couple of days worth of food inside. You grab it, and the slot shuts just behind your hand. Had you been any further away you would have missed it.",
+          "message": "[[NAME]] has found a couple of days worth of food.",
+          "severity": "success",
+          "getItem": {
+            "name": "food",
+            "amount": 3
+          },
+          "chance": 0.3
+        },
+        {
+          "action": "none",
+          "description": "There's a solid *click*, but nothing happens.",
+          "message": "[[NAME]]'s decision hasn't come to anything this time.",
+          "severity": "white",
+          "chance": 0.2
+        }
+      ],
+      [
+        {
+          "action": "none",
+          "description": "You walk away from the boulder.",
+          "severity": "white",
+          "message": "[[NAME]]'s decision hasn't come to anything this time.",
+          "chance": 1
+        }
+      ],
+      [
+        {
+          "action": "none",
+          "description": "After trying for a couple of hours, you've hit the button several times, but not with enough force to activate it. You walk away, disgusted.",
+          "message": "[[NAME]]'s decision hasn't come to anything this time.",
+          "severity": "white",
+          "chance": 0.4
+        },
+        {
+          "action": "none",
+          "description": "You activate the button, and a small slot opens. You can see something inside, but by the time you get there, the slot has sealed and the button has sealed itself into the rock.",
+          "severity": "warning",
+          "message": "[[NAME]]'s decision hasn't come to anything this time.",
+          "chance": 0.4
+        },
+        {
+          "action": "death",
+          "description": "You hit the boulder and it explodes, blowing you and your stuff sky high.",
+          "severity": "danger",
+          "message": "[[NAME]] was blown up.",
+          "chance": 0.2
+        }
+      ]
+    ]
+  },
+  {
+    "prompt": "You're wandering, looking for food, when you find a dog. It runs at you, and to be safe you hold it down from behind. What do you do with it?",
+    "options": [
+      {
+        "buttonClass": "is-danger",
+        "text": "Kill it. It's a source of food."
+      },
+      {
+        "buttonClass": "is-success",
+        "text": "Let the dog live."
+      }
+    ],
+    "optionResults": [
+      [
+        {
+          "action": "getItem",
+          "description": "You kill the dog and, once all is said and done, you have about 3 days worth of food.",
+          "message": "[[NAME]] has slain a dog and obtained a couple of days worth of food.",
+          "severity": "success",
+          "getItem": {
+            "name": "food",
+            "amount": 3
+          },
+          "chance": 0.5
+        },
+        {
+          "action": "none",
+          "description": "The dog escapes your clutches as you reach for your dagger. You curse, but it's already vanished into nature's arms.",
+          "message": "[[NAME]]'s decision hasn't come to anything this time.",
+          "severity": "warning",
+          "chance": 0.5
+        }
+      ],
+      [
+        {
+          "action": "none",
+          "description": "The dog scampers off, and you don't see where it goes.",
+          "message": "[[NAME]]'s decision hasn't come to anything this time.",
+          "severity": "white",
+          "chance": 0.5
+        },
+        {
+          "action": "getItem",
+          "description": "The dog's behavior clearly shows it wants you to follow it. Warily you do, and it leads you to a freshly killed deer that yields 5 days of food.",
+          "message": "[[NAME]] has found 5 days worth of food.",
+          "severity": "success",
+          "chance": 0.5,
+          "getItem": {
+            "name": "food",
+            "amount": 5
+          }
+        }
+      ]
+    ]
+  },
+  {
+    "prompt": "You come across a small stockpile of weapons on a metal plate in the floor. It doesn't look like there's anyone around.",
+    "options": [
+      {
+        "buttonClass": "is-primary",
+        "text": "Pick up a weapon from the pile. They wouldn't be here if they didn't want you to use them."
+      },
+      {
+        "buttonClass": "",
+        "text": "Leave the weapons. They're probably a trap."
+      }
+    ],
+    "optionResults": [
+      [
+        {
+          "action": "getWeapon",
+          "description": "You close your grasp around a evil-looking mace, bracing yourself for an explosion, electric shock or other trap, but nothing comes.",
+          "message": "[[NAME]] has found a mace!",
+          "severity": "success",
+          "getWeapon": "an evil-looking mace",
+          "chance": 0.3
+        },
+        {
+          "action": "death",
+          "description": "A variety of traps go off. Your dead body is electrocuted, stabbed, fireballed and finally blown to bits.",
+          "message": "[[NAME]] was brutalized. Bad decision.",
+          "severity": "danger",
+          "chance": 0.4
+        },
+        {
+          "action": "none",
+          "description": "You cannot move the weapons. They're stuck down with something incredibly strong. This has to be some kind of sick joke.",
+          "message": "[[NAME]] looks stupid trying to pick up a weapon welded to the ground.",
+          "severity": "white",
+          "chance": 0.3
+        }
+      ],
+      [
+        {
+          "action": "none",
+          "description": "You walk away from the weapons.",
+          "message": "[[NAME]]'s decision hasn't come to anything this time.",
+          "severity": "white",
+          "chance": 1
+        }
+      ]
+    ]
+  },
+  {
+    "prompt": "There's a large metal sphere on the top of a nearby hill. It's obviously not part of the landscape, but it could be used as a trap of your own if you can roll it down onto somebody, or as a vantage point.",
+    "options": [
+      {
+        "buttonClass": "is-primary",
+        "text": "Investigate"
+      },
+      {
+        "buttonClass": "",
+        "text": "Leave. Somebody else may have had the same ideas as you."
+      }
+    ],
+    "optionResults": [
+      [
+        {
+          "action": "death",
+          "description": "As you approach the boulder, a multitude of land mines go off. It was such a good idea, too.",
+          "message": "[[NAME]] was blown up.",
+          "severity": "danger",
+          "chance": 0.4
+        },
+        {
+          "action": "none",
+          "description": "You can see around you for quite a way, but can't see anything of note. Furthermore the boulder is immovable.",
+          "message": "[[NAME]]'s decision didn't come to anything.",
+          "severity": "white",
+          "chance": 0.4
+        },
+        {
+          "action": "none",
+          "description": "You can see absolutely nothing of interest in the surrounding area from the top. In frustration, and forgetting where you are, you let out a primal scream.",
+          "message": "A horrific scream echos across the arena, carrying overtones of rage and fear. Something, or someone, is out there.",
+          "severity": "warning",
+          "chance": 0.2
+        }
+      ],
+      [
+        {
+          "action": "none",
+          "description": "You walk away from the boulder.",
+          "message": "[[NAME]]'s decision hasn't come to anything this time.",
+          "severity": "white",
+          "chance": 1
+        }
+      ]
+    ]
+  }
+]
