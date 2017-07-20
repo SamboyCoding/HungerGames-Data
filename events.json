@@ -28,6 +28,12 @@
   },
   {
     "people": 1,
+    "severity": "danger",
+    "message": "discovered that the game was rigged in Sam's favour. He is killed by a gamemaker as a result.",
+    "kill": "all"
+  },
+  {
+    "people": 1,
     "severity": "success",
     "message": "found a day's worth of food left next to a campfire. There are signs of a hasty departure, but there's no threat here now.",
     "getItem": {
