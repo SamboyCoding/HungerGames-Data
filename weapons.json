@@ -28,7 +28,7 @@
   {
     "name": "gladius",
     "damageType": "sharp",
-    "damage", 17,
+    "damage": 17,
     "blockChance": 0.33,
     "pierceChance": 0.35
   }
