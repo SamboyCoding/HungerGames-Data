@@ -78,7 +78,7 @@
                                     "consciousness": 1
                                 }
                             }
-                        },
+                        }
                     }
                 }
             },
@@ -106,7 +106,7 @@
                                         "type": "organ",
                                         "affects": {
                                             "breathing": 0.5  
-                                        },
+                                        }
                                     },
                                     "heart": {
                                         "name": "Heart",
@@ -116,7 +116,7 @@
                                         "hp": 1,
                                         "affects": {
                                             "circulation": 1
-                                        },
+                                        }
                                     },
                                     "rlung": {
                                         "name": "Right Lung",
@@ -160,7 +160,7 @@
                                         "type": "organ",
                                         "affects": {
                                             "eating": 1  
-                                        },
+                                        }
                                     }
                                 }
                             }
