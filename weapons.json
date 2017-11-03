@@ -1,0 +1,16 @@
+[
+  {
+    "name": "fists",
+    "damageType": "blunt",
+    "damage": 3,
+    "blockChance": 0.22,
+    "pierceChance": 0.08
+  },
+  {
+    "name": "club"<
+    "damageType": "blunt",
+    "damage": 7,
+    "blockChance": 0.31,
+    "pierceChance": 0.1
+  }
+]
