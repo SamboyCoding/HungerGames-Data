@@ -1,0 +1,82 @@
+{
+    "body": {
+        "subparts": {
+            "head": {
+                "subparts": {
+                    "leye": {
+                        "name": "Left Eye",
+                        "hitChance": 0.05
+                        "affects": {
+                            "sight": 0.5
+                        }
+                    },
+                    "reye": {
+                        "name": "Right Eye",
+                        "hitChance": 0.05
+                        "affects": {
+                            "sight": 0.5
+                        }
+                    },
+                    "nose": {
+                        "name": "Nose",
+                        "hitChance": 0.1,
+                        "affects": {
+                            "smell": 1,
+                            "talking": 0.2
+                        }
+                    },
+                    "lear": {
+                        "name": "Left Ear",
+                        "hitChance": 0.1
+                        "affects": {
+                            "hearing": 0.5
+                        }
+                    },
+                    "rear": {
+                        "name": "Right Ear",
+                        "hitChance": 0.1
+                        "affects": {
+                            "hearing": 0.5
+                        }
+                    },
+                    "jaw": {
+                        "name": "Jaw",
+                        "hitChance": 0.1,
+                        "affects": {
+                            "talking": 1
+                        }
+                    },
+                    "skull": {
+                        "name": "Skull"
+                        "hitChance": 0.5,
+                        "affects": {},
+                        "subparts": {
+                            "brain": {
+                                "name": "Brain",
+                                "hitChance": 0.08,
+                                "affects": {
+                                    "consciousness": 1
+                                }
+                            }
+                        },
+                    }
+                }
+            },
+            "torso": {
+            
+            },
+            "larm": {
+            
+            },
+            "rarm": {
+            
+            },
+            "lleg": {
+            
+            },
+            "rleg": {
+            
+            },
+        }
+    }
+}
