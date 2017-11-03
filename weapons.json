@@ -1,9 +1,14 @@
 [
   {
+    "__comment": "Should be self-explanatory",
     "name": "fists",
+    "__comment_": "Whether this is a blunt or sharp weapon. Blunt weapons can get through blocks more easily, but sharp weapons cause bleeding.",
     "damageType": "blunt",
+    "__comment__": "Should also be self-explanatory. People have 100 health.",
     "damage": 3,
+    "__comment___": "The chance of a successful block when using this weapon (0-1)",
     "blockChance": 0.22,
+    "__comment____": "The chance of breaking through a block when using this weapon.",
     "pierceChance": 0.08
   },
   {
@@ -12,5 +17,19 @@
     "damage": 7,
     "blockChance": 0.31,
     "pierceChance": 0.1
+  },
+  {
+    "name": "knife",
+    "damageType": "sharp",
+    "damage": 13,
+    "blockChance": 0.26,
+    "pierceChance": 0.3
+  },
+  {
+    "name": "gladius",
+    "damageType": "sharp",
+    "damage", 17,
+    "blockChance": 0.33,
+    "pierceChance": 0.35
   }
 ]
