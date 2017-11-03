@@ -27,7 +27,7 @@
                     "nose": {
                         "name": "Nose",
                         "hitChance": 0.1,
-                        "type": "flesh",
+                        "type": "bone",
                         "hp": 3,
                         "affects": {
                             "smell": 1,
@@ -178,17 +178,67 @@
                                     "affects": {
                                         "eating": 1   
                                     }
-                                },
+                                }
                             }
                         }
                     }
                 }
             },
             "larm": {
-            
+                "name": "Left Arm",
+                "hp": 30,
+                "type": "limb",
+                "affects": {
+                    "manipulation": 0.5   
+                },
+                "subparts": {
+                    "lupperarm": {
+                        "name": "Left Humerus",
+                        "hitchance": 0.4,
+                        "type": "bone",
+                        "hp": 15
+                    },
+                    "lradius": {
+                        "name": "Left Radius",
+                        "hitchance": 0.2,
+                        "hp": 8,
+                        "type": "bone"
+                    },
+                    "lulna": {
+                        "name": "Left Ulna",
+                        "hitchance": 0.2,
+                        "hp": 7,
+                        "type": "bone"
+                    }
+                }
             },
             "rarm": {
-            
+                "name": "Right Arm",
+                "hp": 30,
+                "type": "limb",
+                "affects": {
+                    "manipulation": 0.5   
+                },
+                "subparts": {
+                    "rupperarm": {
+                        "name": "Right Humerus",
+                        "hitchance": 0.4,
+                        "type": "bone",
+                        "hp": 15
+                    },
+                    "rradius": {
+                        "name": "Right Radius",
+                        "hitchance": 0.2,
+                        "hp": 8,
+                        "type": "bone"
+                    },
+                    "rulna": {
+                        "name": "Right Ulna",
+                        "hitchance": 0.2,
+                        "hp": 7,
+                        "type": "bone"
+                    }
+                }
             },
             "lleg": {
             
