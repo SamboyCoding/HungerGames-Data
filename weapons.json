@@ -7,7 +7,7 @@
     "pierceChance": 0.08
   },
   {
-    "name": "club"<
+    "name": "club",
     "damageType": "blunt",
     "damage": 7,
     "blockChance": 0.31,
