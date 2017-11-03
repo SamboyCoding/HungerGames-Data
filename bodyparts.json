@@ -2,10 +2,15 @@
     "body": {
         "subparts": {
             "head": {
+                "name": "Head",
+                "type": "bone",
+                "hp": 18,
                 "subparts": {
                     "leye": {
                         "name": "Left Eye",
                         "hitChance": 0.05,
+                        "type": "organ",
+                        "hp": 3,
                         "affects": {
                             "sight": 0.5
                         }
@@ -13,6 +18,8 @@
                     "reye": {
                         "name": "Right Eye",
                         "hitChance": 0.05,
+                        "type": "organ",
+                        "hp": 3,
                         "affects": {
                             "sight": 0.5
                         }
@@ -20,6 +27,8 @@
                     "nose": {
                         "name": "Nose",
                         "hitChance": 0.1,
+                        "type": "flesh",
+                        "hp": 3,
                         "affects": {
                             "smell": 1,
                             "talking": 0.2
@@ -28,6 +37,8 @@
                     "lear": {
                         "name": "Left Ear",
                         "hitChance": 0.1,
+                        "type": "flesh",
+                        "hp": 3,
                         "affects": {
                             "hearing": 0.5
                         }
@@ -35,6 +46,8 @@
                     "rear": {
                         "name": "Right Ear",
                         "hitChance": 0.1,
+                        "type": "flesh",
+                        "hp": 3,
                         "affects": {
                             "hearing": 0.5
                         }
@@ -42,18 +55,25 @@
                     "jaw": {
                         "name": "Jaw",
                         "hitChance": 0.1,
+                        "type": "bone",
+                        "hp": 3,
                         "affects": {
                             "talking": 1
                         }
                     },
                     "skull": {
                         "name": "Skull",
-                        "hitChance": 0.5,
+                        "hitChance": 0.3,
+                        "type": "bone",
+                        "hp": 18,
                         "affects": {},
                         "subparts": {
                             "brain": {
                                 "name": "Brain",
                                 "hitChance": 0.08,
+                                "type": "organ",
+                                "__comment": "If the brain gets damaged at all it's likely you'd die. Hence the 1HP",
+                                "hp": 1,
                                 "affects": {
                                     "consciousness": 1
                                 }
@@ -63,7 +83,106 @@
                 }
             },
             "torso": {
-            
+                "name": "Torso",
+                "hp": 70,
+                "type": "flesh",
+                "subparts": {
+                    "ribcage": {
+                        "name": "Rib Cage",
+                        "hitchance": 0.5,
+                        "type": "bone",
+                        "hp": 60,
+                        "subparts": {
+                            "upperribs": {
+                                "name": "Upper Ribs",
+                                "hitchance": 0.5,
+                                "type": "bone",
+                                "hp": 30,
+                                "subparts": {
+                                    "llung": {
+                                        "name": "Left Lung",
+                                        "hitchance": 0.17,
+                                        "hp": 14,
+                                        "type": "organ",
+                                        "affects": {
+                                            "breathing": 0.5  
+                                        },
+                                    },
+                                    "heart": {
+                                        "name": "Heart",
+                                        "hitchance": 0.16,
+                                        "type": "organ",
+                                        "__comment": "Similarly to the brain, if this was damaged it's unlikely you'd survive, so 1HP",
+                                        "hp": 1,
+                                        "affects": {
+                                            "circulation": 1
+                                        },
+                                    },
+                                    "rlung": {
+                                        "name": "Right Lung",
+                                        "hitchance": 0.17,
+                                        "type": "organ",
+                                        "hp": 15,
+                                        "affects": {
+                                            "breathing": 0.5
+                                        }
+                                    }
+                                }
+                            },
+                            "lowerribs": {
+                                "name": "Lower Ribs",
+                                "hitchance": 0.5,
+                                "hp": 30,
+                                "type": "bone",
+                                "subparts": {
+                                    "lkidney": {
+                                        "name": "Left Kidney",
+                                        "hitchance": 0.1,
+                                        "hp": 6,
+                                        "type": "organ",
+                                        "affects": {
+                                            "blood_filtration": 0.5
+                                        }
+                                    },
+                                    "rkidney": {
+                                        "name": "Right Kidney",
+                                        "hitchance": 0.1,
+                                        "hp": 6,
+                                        "type": "organ",
+                                        "affects": {
+                                            "blood_filtration": 0.5
+                                        }
+                                    },
+                                    "stomach": {
+                                        "name": "Stomach",
+                                        "hitchance": 0.2,
+                                        "hp": 6,
+                                        "type": "organ",
+                                        "affects": {
+                                            "eating": 1  
+                                        },
+                                    }
+                                }
+                            }
+                        },
+                        "abdomen": {
+                            "name": "Abdomen",
+                            "hp": 30,
+                            "type": "flesh",
+                            "hitchance": 0.4,
+                            "subparts": {
+                                "intestinaltract": {
+                                    "name": "Intestinal Tract",
+                                    "hp": 10,
+                                    "type": "organ",
+                                    "affects": {
+                                        "eating": 1   
+                                    }
+                                },
+                            }
+                        }
+                    }
+                }
             },
             "larm": {
             
