@@ -8,7 +8,7 @@
                 "subparts": {
                     "leye": {
                         "name": "Left Eye",
-                        "hitChance": 0.05,
+                        "hitchance": 0.05,
                         "type": "organ",
                         "hp": 3,
                         "affects": {
@@ -17,7 +17,7 @@
                     },
                     "reye": {
                         "name": "Right Eye",
-                        "hitChance": 0.05,
+                        "hitchance": 0.05,
                         "type": "organ",
                         "hp": 3,
                         "affects": {
@@ -26,7 +26,7 @@
                     },
                     "nose": {
                         "name": "Nose",
-                        "hitChance": 0.1,
+                        "hitchance": 0.1,
                         "type": "bone",
                         "hp": 3,
                         "affects": {
@@ -36,7 +36,7 @@
                     },
                     "lear": {
                         "name": "Left Ear",
-                        "hitChance": 0.1,
+                        "hitchance": 0.1,
                         "type": "flesh",
                         "hp": 3,
                         "affects": {
@@ -45,7 +45,7 @@
                     },
                     "rear": {
                         "name": "Right Ear",
-                        "hitChance": 0.1,
+                        "hitchance": 0.1,
                         "type": "flesh",
                         "hp": 3,
                         "affects": {
@@ -54,7 +54,7 @@
                     },
                     "jaw": {
                         "name": "Jaw",
-                        "hitChance": 0.1,
+                        "hitchance": 0.1,
                         "type": "bone",
                         "hp": 3,
                         "affects": {
@@ -63,14 +63,14 @@
                     },
                     "skull": {
                         "name": "Skull",
-                        "hitChance": 0.3,
+                        "hitchance": 0.3,
                         "type": "bone",
                         "hp": 18,
                         "affects": {},
                         "subparts": {
                             "brain": {
                                 "name": "Brain",
-                                "hitChance": 0.08,
+                                "hitchance": 0.08,
                                 "type": "organ",
                                 "__comment": "If the brain gets damaged at all it's likely you'd die. Hence the 1HP",
                                 "hp": 1,
@@ -241,10 +241,60 @@
                 }
             },
             "lleg": {
-            
+                "name": "Left Leg",
+                "hp": 40,
+                "type": "limb",
+                "affects": {
+                    "movement": 0.5   
+                },
+                "subparts": {
+                    "lfemur": {
+                        "name": "Left Femur",
+                        "hp": 25,
+                        "type": "bone",
+                        "hitchance": 0.5
+                    },
+                    "ltibia": {
+                        "name": "Left Tibia",
+                        "hp": 10,
+                        "type": "bone",
+                        "hitchance": 0.3
+                    },
+                    "lfibia": {
+                        "name": "Left Fibia",
+                        "hp": 5,
+                        "type": "bone",
+                        "hitchance": 0.2
+                    }
+                }
             },
             "rleg": {
-            
+                "name": "Right Leg",
+                "hp": 40,
+                "type": "limb",
+                "affects": {
+                    "movement": 0.5   
+                },
+                "subparts": {
+                    "rfemur": {
+                        "name": "Right Femur",
+                        "hp": 25,
+                        "type": "bone",
+                        "hitchance": 0.5
+                    },
+                    "rtibia": {
+                        "name": "Right Tibia",
+                        "hp": 10,
+                        "type": "bone",
+                        "hitchance": 0.3
+                    },
+                    "rfibia": {
+                        "name": "Right Fibia",
+                        "hp": 5,
+                        "type": "bone",
+                        "hitchance": 0.2
+                    }
+                }
             },
         }
     }
