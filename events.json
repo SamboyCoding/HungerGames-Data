@@ -11,19 +11,19 @@
   {
     "people": 2,
     "severity": "danger",
-    "message": "killed [[NAME2]] in a bloody battle with [[WEAPON]]",
+    "message": "gets into a fight with [[NAME2]]",
     "kill": "second"
   },
   {
     "people": 2,
     "severity": "danger",
-    "message": "killed [[NAME2]], but was badly wounded and died from blood loss",
+    "message": "stumbles across [[NAME2]], catching them unawares",
     "kill": "both"
   },
   {
     "people": 2,
     "severity": "danger",
-    "message": "was killed by [[NAME2]]",
+    "message": "sneaks up on [[NAME2]] and suprises them",
     "kill": "first"
   },
   {
