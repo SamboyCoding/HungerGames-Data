@@ -151,7 +151,7 @@
           "description": "You close your grasp around a evil-looking mace, bracing yourself for an explosion, electric shock or other trap, but nothing comes.",
           "message": "[[NAME]] has found a mace!",
           "severity": "success",
-          "getWeapon": "an evil-looking mace",
+          "getWeapon": 4,
           "chance": 0.3
         },
         {
