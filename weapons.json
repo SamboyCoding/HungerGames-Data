@@ -31,5 +31,12 @@
     "damage": 17,
     "blockChance": 0.33,
     "pierceChance": 0.35
+  },
+  {
+    "name": "an evil-looking mace",
+    "damageType": "blunt",
+    "damage": 13,
+    "blockChance": 0.28,
+    "pierceChange": 0.19
   }
 ]
